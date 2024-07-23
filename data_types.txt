@@ -1,0 +1,28 @@
+int : Typically 4 bytes, depending on the system.
+float : Typically 4 bytes.
+double : Typically 8 bytes.
+char: Typically 1 byte.
+long int : Typically 8 bytes (may vary, but often 8 bytes on 64-bit systems).
+short int : Typically 2 bytes (may vary, but often 2 bytes on most systems).
+
+Common Format Specifiers:
+
+%d or %i: Integer
+%f: Float
+%lf: Double
+%c: Character
+%s: String
+
+<stdio.h>: This header file is necessary to use printf and scanf.
+printf
+Purpose: printf is used to print output to the console.
+printf(format_string, variables);
+Explanation:
+format_string: A string that includes text and format specifiers.
+variables: Variables to be printed, corresponding to the format specifiers.
+scanf
+Purpose: scanf is used to read input from the console.
+scanf(format_string, &variables);  
+format_string: A string that includes format specifiers indicating the type of input to be read.
+&variables: Pointers to variables where the input values will be stored.
+Use the & (address-of) operator to pass the address of the variable to scanf, except for strings where the array name itself acts as a pointer.
